@@ -1,7 +1,7 @@
 # Brain-Tumor-Detection
 This project demonstrates how you can use the TensorFlow Python library to build a deep learning model for image classification. The goal was to create a convolutional neural network that can process brain image scans and determine if a tumor is present.
 
-The [image dataset][dataset] used to train the model was downloaded from Kaggle. The user, who uploaded the dataset, described the images as "X-ray images of Brain." However, judging from the visual features of the scans, it appears that these images most likely came from MRI scans, as there are no dense bone structures present.
+The [image dataset][dataset] used to train the model was downloaded from Kaggle. The user, who uploaded the dataset, described the images as "X-ray images of Brain." However, these can be more accurately characterized as CT scans, since a basic X-ray scan is meant to visualize dense bone structures, like the skull. The images from dataset highlight the soft tissues inside the brain, which is more consistent with the features of a CT scan.
 
 A model was trained on 80% of the data and evaluated on the other 20%. The final test accuracy came out to ~97%. This model was exported in the SavedModel format to `\brain_tumor_detection_model\`, so anyone can load same the model and use it to make predictions on new images. To experiment with different model and training hyperparameters, follow the steps below to set up your environment.
 
